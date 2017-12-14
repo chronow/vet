@@ -66,9 +66,12 @@ use yii\helpers\Url;
     }
 </script>
 
+<br/><br/>
+
+<div class="clearfix"></div>
+<div class="col-lg-12"><h3 class="pull-left mr_t0" id="repAnchor">Отчёты по медикаментам</h3></div>
 <div class="clearfix"></div>
 
-<div class="col-lg-12"><h3 class="pull-left mr_t0" id="repAnchor">Отчёты</h3></div>
 <input type="hidden" id="idRep" name="idRep" value="<?=$model->id?>" />
 
 <div class="clear-fix"></div>
@@ -148,7 +151,9 @@ use yii\helpers\Url;
 
 
 
-
+<div class="clearfix"></div>
+<div class="col-lg-12"><h3 class="pull-left mr_t0" id="repAnchor">Отчёты по анализам</h3></div>
+<div class="clearfix"></div>
 <script type="text/javascript">
     /* Увеличение и просчет кол-ва */
     function ajaxAna($type){
@@ -274,7 +279,9 @@ use yii\helpers\Url;
 
 
 
-
+<div class="clearfix"></div>
+<div class="col-lg-12"><h3 class="pull-left mr_t0" id="repAnchor">Отчёты по услугам</h3></div>
+<div class="clearfix"></div>
 <script type="text/javascript">
     /* Увеличение и просчет кол-ва */
     function ajaxSer($type){
@@ -333,7 +340,7 @@ use yii\helpers\Url;
 </script>
 <div class="col-lg-6">
     <div class="panel panel-default">
-        <div class="panel-heading">ДОБАВЛЕНИЕ СЕРВИСОВ В ОТЧЁТ</div>
+        <div class="panel-heading">ДОБАВЛЕНИЕ УСЛУГ В ОТЧЁТ</div>
         <div class="panel-body">
             
             <?php $form3 = ActiveForm::begin();?>

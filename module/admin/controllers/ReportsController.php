@@ -60,9 +60,18 @@ class ReportsController extends Controller
      * @return mixed
      */
     public function actionView($id)
-    {
+    {   
+        $model = $this->findModel($id);
+        
+        $ReportsMedicines = $model->ReportsMedicinesFunc;
+        $ReportsAnalyzes = $model->ReportsAnalyzesFunc;
+        $ReportsServices = $model->ReportsServicesFunc;
+        
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $model,
+            'reports_medicines' => $ReportsMedicines,
+            'reports_analyzes' => $ReportsAnalyzes,
+            'reports_services' => $ReportsServices,
         ]);
     }
 

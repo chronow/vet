@@ -103,12 +103,12 @@ AdminAsset::register($this);
                                 <span class="glyphicon glyphicon-list-alt font20"></span>
                                 <span>Приём</span>
                             </a>
-                            <!--
+                            
                             <a class="<?if(Yii::$app->controller->id=='reports'):?>actual_menu<?endif;?>" href="/<?=Yii::$app->controller->module->id?>/reports" style="">
                                 <span class="glyphicon glyphicon-duplicate font20"></span>
                                 <span>Отчёты архив</span>
                             </a>
-                            -->
+                            
                             <!--
                             <a class="<?if(Yii::$app->controller->id=='mail'):?>actual_menu<?endif;?>" href="/<?=Yii::$app->controller->module->id?>/mail" style="">
                                 <span class="glyphicon glyphicon-envelope font20"></span>

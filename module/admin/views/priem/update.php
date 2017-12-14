@@ -11,6 +11,9 @@ $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' 
 $this->params['breadcrumbs'][] = 'Update';
 ?>
 <?=$this->render('_menu') ?>
+
+<div class="clearfix"></div>
+
 <div class="row-fluid">
     <div class="col-lg-12">
 

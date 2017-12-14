@@ -19,6 +19,8 @@ $this->params['breadcrumbs'][] = 'Update';
 
 <?=$this->render('_menu') ?>
 
+<div class="clearfix"></div>
+
 <div class="clearfix"></div><br />
 
 <div class="row-fluid">

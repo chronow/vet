@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\module\admin\models\Reports */
 
-$this->title = "Отчёт #".$model->id;
+$this->title = "Лист отчёта #".$model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Reports', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -39,5 +39,35 @@ $this->params['breadcrumbs'][] = $this->title;
             'note:ntext',
         ],
     ]) ?>
+    
+    
+    
+    <?if($reports_medicines):?>
+    <div class="clearfix"></div>
+    <h3 class="pull-left mr_t8"><span class="glyphicon glyphicon-duplicate"></span> <?= Html::encode("Отчёт по медикаментам") ?></h3>
+    <div class="clearfix"></div>
+    
+    <?= $reports_medicines ?>
+    <?endif;?>
+    
+    <?if($reports_analyzes):?>
+    <div class="clearfix"></div>
+    <h3 class="pull-left mr_t8"><span class="glyphicon glyphicon-duplicate"></span> <?= Html::encode("Отчёт по анализам") ?></h3>
+    <div class="clearfix"></div>
+    
+    <?= $reports_analyzes ?>
+    <?endif;?>
+    
+    <?if($reports_services):?>
+    <div class="clearfix"></div>
+    <h3 class="pull-left mr_t8"><span class="glyphicon glyphicon-duplicate"></span> <?= Html::encode("Отчёт по услугам") ?></h3>
+    <div class="clearfix"></div>
+    
+    <?= $reports_services ?>
+    <?endif;?>
+    
+    <div class="clearfix"></div>
+    
+    
 	</div>
 </div>

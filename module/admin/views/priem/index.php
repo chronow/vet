@@ -14,9 +14,15 @@ $this->title = 'Priems';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <?=$this->render('_menu') ?>
+
+
+<div class="clearfix"></div>
+
 <div class="row-fluid">
     <div class="col-lg-12">
-
+    
+    <div class="clearfix"></div>
+    
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

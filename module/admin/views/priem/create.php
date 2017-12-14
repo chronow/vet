@@ -11,6 +11,9 @@ $this->params['breadcrumbs'][] = ['label' => 'Priems', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <?=$this->render('_menu') ?>
+
+<div class="clearfix"></div>
+
 <div class="row-fluid">
     <div class="col-lg-12">
 

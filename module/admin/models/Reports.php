@@ -137,5 +137,50 @@ class Reports extends \yii\db\ActiveRecord
         $Priem->update();
         
         return $allSumm;
-    }            
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /**
+     * Получение записей отчёто приёма из таблицы
+     * */
+    public function getReportsMedicinesFunc()
+    {   //return ReportsMedicines::findAll(['id_priem'=>$this->id]);
+        $ReportsArray = ReportsMedicines::find()->where(['id_priem' => $this->id])->asArray()->all();
+        if(count($ReportsArray)==0)return false;
+        $Reports = new Reports();
+        $html = $Reports->getHtmlTableType2($ReportsArray, 'Med');
+        return $html;
+    }
+    /**
+     * Получение записей отчёто приёма из таблицы
+     * */
+    public function getReportsAnalyzesFunc()
+    {
+        //return ReportsAnalyzes::findAll(['id_priem'=>$this->id]);
+        $ReportsArray = ReportsAnalyzes::find()->where(['id_priem' => $this->id])->asArray()->all();
+        if(count($ReportsArray)==0)return false;
+        $Reports = new Reports();
+        $html = $Reports->getHtmlTableType2($ReportsArray, 'Ana');
+        return $html;
+    }
+    /**
+     * Получение записей отчёто приёма из таблицы
+     * */
+    public function getReportsServicesFunc()
+    {
+        //return ReportsServices::findAll(['id_priem'=>$this->id]);
+        $ReportsArray = ReportsServices::find()->where(['id_priem' => $this->id])->asArray()->all();
+        if(count($ReportsArray)==0)return false;
+        $Reports = new Reports();
+        $html = $Reports->getHtmlTableType2($ReportsArray, 'Ser');
+        return $html;
+    }
 }

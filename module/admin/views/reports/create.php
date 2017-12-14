@@ -12,6 +12,8 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <?=$this->render('_menu') ?>
 
+<div class="clearfix"></div>
+
 <div class="row-fluid">
     <div class="col-lg-12">
     
@@ -21,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
     
     <?= $this->render('_form', [
         'model' => $model,
-        'listMedicines' => $listMedicines,
+        //'listMedicines' => $listMedicines,
     ]) ?>
 	</div>
 </div>
